@@ -11,7 +11,8 @@ ENV CATALINA_HOME=/usr/local/tomcat
 ENV PATH="$CATALINA_HOME/bin:$PATH"
 
 RUN rm -rf /usr/local/tomcat/webapps/*
-COPY ch04_ex1_survey.war /usr/local/tomcat/webapps/ROOT.war
+COPY ch13_ex2_userAdmin.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
+
